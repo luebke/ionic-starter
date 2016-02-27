@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-positive">
+        <button class="button icon ion-navicon button-clear"></button>
+        <h1 class="title">Ionic Blank Starter</h1>
+        <button class="button icon ion-gear-a button-clear"></button>
+      </ion-header-bar>
+
+
+      <ion-content class="padding has-subheader has-tabs">
+
+        <div class="list list-inset">
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Vorname</span>
+            <input type="text" placeholder="Dein Vorname">
+          </label>
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Nachname</span>
+            <input type="text" placeholder="Dein Nachname">
+          </label>
+
+          <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+              <input type="text" placeholder="Suchbegriff">
+            </label>
+            <button class="button button-small">Suchen</button>
+          </div>
+
+          <label class="item item-input">
+            <textarea placeholder="Kommentar"></textarea>
+          </label>
+
+          <label class="item item-input item-select">
+            <span class="input-label">Stadt</span>
+            <select>
+              <option>Burgstemmen</option>
+              <option>Nordstemmen</option>
+              <option>Alfeld</option>
+              <option>Hildesheim</option>
+              <option>Hannover</option>
+            </select>
+          </label>
+
+          <div class="item item-checkbox checkbox-assertive">
+            <label class="checkbox">
+              <input type="checkbox">
+            </label>
+            <span class="input-label">AGB</span>
+          </div>
+
+          <div class="item item-toggle">
+            <span class="input-label">Push Benachrichtigung</span>
+            <label class="toggle toggle-assertive">
+              <input type="checkbox">
+              <div class="track">
+                <div class="handle"></div>
+              </div>
+            </label>
+          </div>
+
+          <div class="item range range-assertive">
+            <span class="input-label">Bewertung</span>
+            <i class="icon ion-sad-outline"></i>
+            <input type="range" name="benchmark" min="0" max="100" value="75">
+            <i class="icon ion-happy"></i>
+          </div>
+          
+          <div class="item item-divider">
+            Mann oder Frau?
+          </div>
+
+          <label class="item item-radio">
+            <input type="radio" name="salutation">
+            <div class="radio-content">
+              <div class="item-content">Frau</div>
+              <i class="radio-icon ion-woman"></i>
+            </div>
+          </label>
+
+          <label class="item item-radio">
+            <input type="radio" name="salutation">
+            <div class="radio-content">
+              <div class="item-content">Mann</div>
+              <i class="radio-icon ion-man"></i>
+            </div>
+          </label>
+
+        </div>
+
+        <!--<div class="list list-inset">
+          <div class="item item-divider">Kopfzeile</div>
+          <div class="item item-image item-body">
+            <img src="http://placehold.it/480x240" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores corporis cum delectus dolores enim
+              error esse facere illo, in ipsum labore magni maiores qui, quibusdam reprehenderit sit soluta totam
+              vel.</p>
+          </div>
+          <div class="item item-icon-left item-text-wrap">
+            <i class="icon ion-ionic"></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consectetur dignissimos in, ipsa modi
+              numquam odit. Accusamus aspernatur cumque distinctio fugiat impedit modi necessitatibus quasi qui,
+              quisquam reiciendis repudiandae voluptatibus.</p>
+          </div>
+          <div class="item item-divider">Fußzeile</div>
+        </div>-->
+
+        <!--<div class="list">
+          <a href="#" class="item">Item 01</a>
+          <a href="#" class="item">Item 02</a>
+          <a href="#" class="item">Item 03</a>
+          <a href="#" class="item">Item 04</a>
+          <a href="#" class="item item-icon-left">
+            <i class="icon ion-ionic"></i>
+            Item 05
+          </a>
+          <a href="#" class="item item-icon-left item-icon-right">
+            <i class="icon ion-android-mail"></i>
+            Item 06
+            <i class="icon ion-ios-telephone"></i>
+          </a>
+          <a href="#" class="item">
+            Item 07
+            <span class="item-note">Notiz</span>
+          </a>
+          <a href="#" class="item">
+            Item 08
+            <span class="badge badge-assertive">4</span>
+          </a>
+          <a href="#" class="item item-button-right">
+            Item 09
+            <button class="button button-calm"><i class="icon ion-man"></i></button>
+          </a>
+          <a href="#" class="item">Item 10</a>
+          <div class="item item divider">Überschrift</div>
+          <a href="#" class="item">Item 11</a>
+          <a href="#" class="item item-avatar">
+            <img src="http://placehold.it/100x100" alt="">
+            Item 12
+          </a>
+          <a href="#" class="item item-thumbnail-left item-text-wrap">
+            <img src="http://placehold.it/100x100" alt="">
+            <h2>Item 13</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cumque delectus deleniti dolores
+              ducimus eius error excepturi fugiat itaque iure nesciunt odio qui quia sed sint totam ut, velit vero!</p>
+          </a>
+          <a href="#" class="item">Item 14</a>
+          <a href="#" class="item">Item 15</a>
+          <a href="#" class="item">Item 16</a>
+          <a href="#" class="item">Item 17</a>
+          <a href="#" class="item">Item 18</a>
+          <a href="#" class="item">Item 19</a>
+          <a href="#" class="item">Item 20</a>
+          <a href="#" class="item">Item 21</a>
+          <a href="#" class="item">Item 22</a>
+          <a href="#" class="item">Item 23</a>
+          <a href="#" class="item">Item 24</a>
+          <a href="#" class="item">Item 25</a>
+          <a href="#" class="item">Item 26</a>
+          <a href="#" class="item">Item 27</a>
+        </div>-->
+
+      </ion-content>
+
+      <div class="tabs-striped tabs-background-positive tabs-color-light">
+        <div class="tabs tabs-icon-only">
+          <a class="tab-item"><i class="icon ion-home"></i> Home</a>
+          <a class="tab-item"><i class="icon ion-man"></i> About</a>
+          <a class="tab-item"><i class="icon ion-android-mail"></i> Contact</a>
+        </div>
+      </div>
+
+
+    </ion-pane>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-positive">
+        <button class="button icon ion-navicon button-clear"></button>
+        <h1 class="title">Ionic Blank Starter</h1>
+        <button class="button icon ion-gear-a button-clear"></button>
+      </ion-header-bar>
+
+
+      <ion-content class="padding has-subheader has-tabs-top">
+        <ion-refresher
+                pulling-text="Pull to refresh..."
+                on-refresh="doRefresh()">
+        </ion-refresher>
+
+        <div class="bar-subheader">
+          <h2 class="title">hello world</h2>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut, commodi debitis dignissimos ipsa modi
+          molestiae molestias natus, omnis quia quisquam quo quod sint ullam ut veritatis voluptates. Animi,
+          consequatur?</p>
+
+        <p>
+          <button class="button icon-left ion-home button-block button-positive">Home</button>
+        </p>
+
+        <div class="button-bar">
+          <button class="button icon ion-wand button-assertive"></button>
+          <button class="button icon ion-magnet button-balanced"></button>
+          <button class="button icon ion-alert-circled button-positive"></button>
+        </div>
+
+
+
+      </ion-content>
+
+      <!--<ion-footer-bar class="bar-positive">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-footer-bar>-->
+
+      <div class="tabs-striped tabs-background-positive tabs-color-light tabs-top">
+        <div class="tabs tabs-icon-only">
+          <a class="tab-item"><i class="icon ion-home"></i> Home</a>
+          <a class="tab-item"><i class="icon ion-man"></i> About</a>
+          <a class="tab-item"><i class="icon ion-android-mail"></i> Contact</a>
+        </div>
+      </div>
+
+
+    </ion-pane>
+  </body>
+</html>
