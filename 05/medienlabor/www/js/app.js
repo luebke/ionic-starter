@@ -23,10 +23,58 @@ angular.module('medienlaborapp', ['ionic'])
   });
 })
 
-.controller("ListCtrl", function( $scope, $http ){
+.controller("ListCtrl", function( $scope, $http, $window ){
 
-  $http.get("js/data.json").then(function(data){
-    $scope.data = data.data;
-  });
+  $scope.enableReorder = false;
+  $scope.enableDelete = false;
+
+  $scope.moveItem = function(user, $fromIndex, $toIndex) {
+    //console.log(user,$fromIndex,$toIndex);
+    $scope.data.splice($fromIndex, 1);
+    $scope.data.splice($toIndex, 0, user);
+  };
+
+  $scope.deleteItem = function($index) {
+    $scope.data.splice($index, 1);
+  };
+
+  $scope.toggleReorder = function(){
+    $scope.enableReorder = !$scope.enableReorder;
+    if($scope.enableReorder) {
+      $scope.enableDelete = false;
+    }
+  };
+
+  $scope.toggleFav = function(user){
+    user.fav = !user.fav;
+  };
+
+  $scope.mailTo = function(user){
+    $window.location.href = "mailto:" + user.mail;
+  };
+
+  $scope.callTo = function(user){
+    $window.location.href = "tel:" + user.phone;
+  };
+
+  $scope.toggleDelete = function(){
+    $scope.enableDelete = !$scope.enableDelete;
+    if($scope.enableDelete) {
+      $scope.enableReorder = false;
+    }
+  };
+
+  $scope.doRefresh = function(){
+    $scope.loadUsers();
+    $scope.$broadcast('scroll.refreshComplete');
+  };
+
+  $scope.loadUsers = function(){
+    $http.get("js/data.json").then(function(data){
+      $scope.data = data.data;
+    });
+  };
+
+  $scope.loadUsers();
 
 })
