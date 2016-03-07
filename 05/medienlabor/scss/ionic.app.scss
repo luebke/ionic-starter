@@ -27,3 +27,16 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     background-color: $balanced;
   }
 }
+
+.medienlabor-home-bg {
+  background: url("../img/nettrek-softwareentwicklung-key-visual_bg.jpg") no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.medienlabor-home-logo {
+  width: 45%;
+  max-width: 400px;
+}

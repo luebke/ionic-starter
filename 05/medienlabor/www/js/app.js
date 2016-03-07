@@ -23,7 +23,48 @@ angular.module('medienlaborapp', ['ionic'])
   });
 })
 
-.controller("ListCtrl", function( $scope, $http, $window ){
+.config(function($stateProvider, $urlRouterProvider){
+
+  $stateProvider
+      .state('tabs', {
+        url: '/tabs',
+        abstract: true,
+        templateUrl: 'templates/navigation.html'
+      })
+      .state('tabs.home', {
+        url: '/home',
+        views: {
+          'home-tab': {
+            templateUrl: 'templates/medienlabor.html',
+            controller: 'ListCtrl'
+          }
+        }
+      })
+      .state('tabs.list', {
+        url: '/list',
+        views: {
+          'list-tab': {
+            templateUrl: 'templates/list.html',
+            controller: 'ListCtrl'
+          }
+        }
+      })
+      .state('tabs.details', {
+        url: '/list/:id',
+        views: {
+          'detail-tab': {
+            templateUrl: 'templates/details.html',
+            controller: 'ListCtrl'
+          }
+        }
+      })
+  ;
+
+  $urlRouterProvider.otherwise('/tabs/home');
+
+})
+
+.controller("ListCtrl", function( $scope, $http, $window, $state ){
 
   $scope.enableReorder = false;
   $scope.enableDelete = false;
@@ -72,6 +113,7 @@ angular.module('medienlaborapp', ['ionic'])
   $scope.loadUsers = function(){
     $http.get("js/data.json").then(function(data){
       $scope.data = data.data;
+      $scope.selectedID = $state.params.id;
     });
   };
 
