@@ -22,11 +22,31 @@ angular.module('starter', ['ionic'])
     }
   });
 })
-    .controller("ListCtrl", function(){
-      this.foo = 10;
-      this.bar = 15;
 
-      this.reset = function(){
-        this.foo = this.bar = 0;
-      }
-    });
+    .controller("ListCtrl", function($utils){
+        this.foo = 10;
+        this.bar = 15;
+
+        this.reset = function(){
+            this.foo = this.bar = 0;
+        };
+
+        this.showValues = function() {
+            $utils.alert(this.foo, this.bar);
+        };
+
+    })
+
+    .factory("$utils", function(){
+        return {
+            alert: function() {
+                var out = "";
+                for(var i in arguments) {
+                    out += arguments[i] + "\n";
+                }
+                alert(out);
+            }
+        }
+    })
+
+;
