@@ -52,7 +52,7 @@ angular.module('medienlaborapp', ['ionic'])
       .state('tabs.details', {
         url: '/list/:id',
         views: {
-          'detail-tab': {
+          'list-tab': {
             templateUrl: 'templates/details.html',
             controller: 'ListCtrl'
           }

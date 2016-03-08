@@ -4,6 +4,23 @@
 
 <ion-view>
     <ion-content>
-        {{selectedID}}
+        <ion-list>
+            <ion-item ng-repeat="user in data | filter : {id: selectedID}"
+            class="item-body item-thumbnail-right">
+                <img ng-src="img/{{user.id}}.jpg">
+                <h2 ng-bind="::user.name"></h2>
+                <h3 ng-bind="::user.pos | uppercase"></h3>
+                <p ng-bind="::user.desc"></p>
+                <div class="button-bar">
+                    <button class="button button-positive button-outline ion-android-mail icon-right" ng-click="mailTo(user)">
+                        Mail
+                    </button>
+
+                    <button class="button button-positive button-outline ion-android-phone-portrait icon-right" ng-click="callTo(user)">
+                        Anrufen
+                    </button>
+                </div>
+            </ion-item>
+        </ion-list>
     </ion-content>
 </ion-view>
