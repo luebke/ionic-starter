@@ -1,13 +1,13 @@
 <ion-header-bar class="bar-positive">
     <button class="button button-icon ion-ios-minus-outline" ng-click="toggleDelete()"></button>
-    <h2 class="title">medienlabor</h2>
+    <h2 class="title">Unser Team</h2>
     <button class="button button-icon ion-navicon" ng-click="toggleReorder()"></button>
 </ion-header-bar>
 
 <div class="bar bar-subheader item-input-inset">
     <label class="item-input-wrapper">
         <i class="icon ion-search placeholder-icon"></i>
-        <input type="search" placeholder="Suche" ng-model="searchstring">
+        <input type="search" placeholder="Namen suchen" ng-model="searchstring">
     </label>
 </div>
 
@@ -19,14 +19,14 @@
             show-reorder="enableReorder"
             show-delete="enableDelete">
 
-        <ion-item class="item-avatar"
-                  ng-repeat="user in data | filter : searchstring"
+        <ion-item class="item-thumbnail-left"
+                  ng-repeat="user in data | filter : {name: searchstring}"
                   ng-class="{'fav':user.fav}" href="#/tabs/list/{{user.id}}">
 
-            <img ng-src="img/{{user.id}}.jpg">
+            <img ng-src="img/team/{{user.id}}.png">
             <h2 ng-bind="::user.name"></h2>
-            <h3 ng-bind="::user.pos | uppercase"></h3>
-            <p ng-bind="::user.desc"></p>
+            <h3 ng-bind="::user.department | uppercase"></h3>
+            <h4 ng-bind="::user.pos | uppercase"></h4>
 
             <ion-option-button class="button button-assertive ion-android-phone-portrait button-large"
                                ng-click="callTo(user)">

@@ -90,11 +90,11 @@ angular.module('neuwaertsapp', ['ionic'])
       };
 
       $scope.mailTo = function(user){
-        $window.location.href = "mailto:" + user.mail;
+        $window.location.href = "mailto:" + user.email;
       };
 
       $scope.callTo = function(user){
-        $window.location.href = "tel:" + user.phone;
+        $window.location.href = "tel:" + user.telephone;
       };
 
       $scope.toggleDelete = function(){
@@ -110,7 +110,7 @@ angular.module('neuwaertsapp', ['ionic'])
       };
 
       $scope.loadUsers = function(){
-        $http.get("js/data.json").then(function(data){
+        $http.get("js/team.json").then(function(data){
           $scope.data = data.data;
           $scope.selectedID = $state.params.id;
         });

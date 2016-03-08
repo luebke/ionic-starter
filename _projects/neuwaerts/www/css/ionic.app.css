@@ -9744,3 +9744,36 @@ a.button {
 .neuwaerts-home-logo {
   width: 45%;
   max-width: 400px; }
+
+.neuwaerts-home-neue-wege {
+  width: 80px;
+  margin: 390px auto; }
+  .neuwaerts-home-neue-wege img {
+    width: 100%; }
+
+#teamCouch {
+  height: 500px;
+  padding-top: 50px;
+  position: relative;
+  overflow: hidden; }
+  #teamCouch #teamWrapper {
+    background: url(../img/sofa/sofa_bg.png) 153px 70px repeat-x;
+    height: 600px !important;
+    overflow: visible !important;
+    width: 100%;
+    position: absolute !important;
+    top: -60px;
+    left: 0;
+    z-index: 80;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box; }
+    #teamCouch #teamWrapper .imgWrapper {
+      width: 300px;
+      margin: 0 auto; }
+    #teamCouch #teamWrapper .sofa_left {
+      background-image: url("../img/sofa/sofa_left.png");
+      left: 0; }
+    #teamCouch #teamWrapper .sofa_right {
+      background-image: url("../img/sofa/sofa_right.png");
+      right: 0; }

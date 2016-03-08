@@ -1,0 +1,180 @@
+[
+    {
+        "id": "ingo3",
+        "name": "Ingo Stoll",
+        "department": "Geschäftsführung",
+        "pos": "",
+        "email": "ingo.stoll@neuwaerts.de",
+        "telephone": "+49 511 987798-0",
+        "desc": ""
+    },
+    {
+        "id": "markus",
+        "name": "Markus Herwig",
+        "department": "Geschäftsführung",
+        "pos": "",
+        "email": "markus.herwig@neuwaerts.de",
+        "telephone": "+49 511 987798-0",
+        "desc": ""
+    },
+    {
+        "id": "joern1",
+        "name": "Jörn Hutecker",
+        "department": "Geschäftsführung",
+        "pos": "",
+        "email": "joern.hutecker@neuwaerts.de",
+        "telephone": "+49 511 987798-0",
+        "desc": ""
+    },
+
+    {
+        "id": "amir",
+        "name": "Amir Ardalan",
+        "department": "Office-Management",
+        "pos": "Event & Location Management",
+        "email": "amir.ardalan@neuwaerts.de",
+        "telephone": "+49 511 987798-70",
+        "desc": ""
+    },
+    {
+        "id": "sandra",
+        "name": "Sandra Horn",
+        "department": "Office-Management",
+        "pos": "Referentin Finanzen",
+        "email": "sandra.horn@neuwaerts.de",
+        "telephone": "+49 511 987798-23",
+        "desc": ""
+    },
+    {
+        "id": "regina",
+        "name": "Regina Komischke",
+        "department": "Office-Management",
+        "pos": "",
+        "email": "regina.komischke@neuwaerts.de",
+        "telephone": "+49 511 987798-69",
+        "desc": ""
+    },
+    {
+        "id": "angelika",
+        "name": "Angelika Kruse",
+        "department": "Office-Management",
+        "pos": "Referentin Controlling",
+        "email": "angelika.kruse@neuwaerts.de",
+        "telephone": "+49 511 987798-23",
+        "desc": ""
+    },
+
+    {
+        "id": "steffi1",
+        "name": "Stefanie Herbst",
+        "department": "Grafik- & Multimedia-Design",
+        "pos": "",
+        "email": "stefanie.herbst@neuwaerts.de",
+        "telephone": "+49 511 987798-43",
+        "desc": ""
+    },
+    {
+        "id": "julian1",
+        "name": "Julian Steincke",
+        "department": "Grafik- & Multimedia-Design",
+        "pos": "",
+        "email": "julian.steincke@neuwaerts.de",
+        "telephone": "+49 511 987798-0",
+        "desc": ""
+    },
+    {
+        "id": "andreas2",
+        "name": "Andreas Luczyk",
+        "department": "Grafik- & Multimedia-Design",
+        "pos": "",
+        "email": "andreas.luczyk@neuwaerts.de",
+        "telephone": "+49 511 987798-10",
+        "desc": ""
+    },
+    {
+        "id": "stefan5",
+        "name": "Stefan Boldt",
+        "department": "Grafik- & Multimedia-Design",
+        "pos": "Leitung Kreation | Grafik",
+        "email": "stefan.boldt@neuwaerts.de",
+        "telephone": "+49 511 987798-55",
+        "desc": ""
+    },
+    {
+        "id": "michaela1",
+        "name": "Michaela Zaengel",
+        "department": "Grafik- & Multimedia-Design",
+        "pos": "Art Director",
+        "email": "michaela.zaengel@neuwaerts.de",
+        "telephone": "+49 511 987798-78",
+        "desc": ""
+    },
+    {
+        "id": "maja3",
+        "name": "Maja Ritzer",
+        "department": "Grafik- & Multimedia-Design",
+        "pos": "",
+        "email": "maja.ritzer@neuwaerts.de",
+        "telephone": "+49 511 987798-59",
+        "desc": ""
+    },
+    {
+        "id": "cora2",
+        "name": "Cora Lehmer",
+        "department": "Grafik- & Multimedia-Design",
+        "pos": "",
+        "email": "cora.lehmer@neuwaerts.de",
+        "telephone": "+49 511 987798-74",
+        "desc": ""
+    },
+    {
+        "id": "lauravonpawlez",
+        "name": "Laura von Pawelsz",
+        "department": "Grafik- & Multimedia-Design",
+        "pos": "",
+        "email": "laura.vonpawelsz@neuwaerts.de",
+        "telephone": "+49 511 987798-25",
+        "desc": ""
+    },
+    {
+        "id": "sina-maria1",
+        "name": "Sina Maria Malosczyk",
+        "department": "Grafik- & Multimedia-Design",
+        "pos": "Art Director",
+        "email": "sina.malosczyk@neuwaerts.de",
+        "telephone": "+49 511 987798-38",
+        "desc": ""
+    },
+    {
+        "id": "andre8",
+        "name": "André Keller",
+        "department": "Grafik- & Multimedia-Design",
+        "pos": "Art Director",
+        "email": "andre.keller@neuwaerts.de",
+        "telephone": "+49 511 987798-34",
+        "desc": ""
+    },
+    {
+        "id": "anna",
+        "name": "Anna Polat",
+        "department": "Grafik- & Multimedia-Design",
+        "pos": "",
+        "email": "anna.polat@neuwaerts.de",
+        "telephone": "+49 511 987798-42",
+        "desc": ""
+    },
+    {
+        "id": "hendrik",
+        "name": "Hendrik Evers",
+        "department": "Grafik- & Multimedia-Design",
+        "pos": "",
+        "email": "hendrik.evers@neuwaerts.de",
+        "telephone": "+49 511 987798-14",
+        "desc": ""
+    }
+
+
+
+
+
+]

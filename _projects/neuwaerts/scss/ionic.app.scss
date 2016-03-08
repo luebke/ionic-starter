@@ -41,3 +41,48 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   width: 45%;
   max-width: 400px;
 }
+
+.neuwaerts-home-neue-wege {
+  width: 80px;
+  margin: 390px auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+#teamCouch {
+  height: 500px;
+  padding-top: 50px;
+  position: relative;
+  overflow: hidden;
+
+  #teamWrapper {
+    background: url(../img/sofa/sofa_bg.png) 153px 70px repeat-x;
+    height: 600px !important;
+    overflow: visible !important;
+    width: 100%;
+    position: absolute !important;
+    top: -60px;
+    left: 0;
+    z-index: 80;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+
+    & .imgWrapper {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    & .sofa_left {
+      background-image: url("../img/sofa/sofa_left.png");
+      left: 0;
+    }
+
+    & .sofa_right {
+      background-image: url("../img/sofa/sofa_right.png");
+      right: 0;
+    }
+  }
+}
